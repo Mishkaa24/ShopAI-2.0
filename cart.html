@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Кошик - Shop AI</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="container header-flex">
+    <!-- Логотип -->
+    <div class="logo">Shop AI</div>
+
+    <!-- Навігація -->
+    <nav class="nav">
+      <div class="dropdown">
+        <button class="dropbtn" id="dropdownMenuButton">
+          Продукти <span class="arrow"></span>
+        </button>
+        <div class="dropdown-content" aria-labelledby="dropdownMenuButton">
+          <a href="index.html#tech">Техніка</a>
+          <a href="index.html#clothes">Одяг</a>
+          <a href="index.html#toys">Іграшки</a>
+          <a href="index.html#books">Книги</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Кошик -->
+    <a href="index.html" class="cart">⬅ Назад до магазину</a>
+  </div>
+</header>
+
+<!-- CART CONTENT -->
+<section class="cart-section">
+  <div class="cart-container">
+    <h1 class="cart-title">Ваш кошик</h1>
+    
+    <div class="cart-content">
+      <!-- Cart Items -->
+      <div class="cart-items" id="cartItems"></div>
+      
+      <!-- Cart Summary -->
+      <div class="cart-summary">
+        <h2>Підсумок замовлення</h2>
+        <div class="summary-row">
+          <span>Товари:</span>
+          <span id="itemsCount">0 шт.</span>
+        </div>
+        <div class="summary-row">
+          <span>Доставка:</span>
+          <span id="deliveryPrice">Безкоштовно</span>
+        </div>
+        <div class="summary-divider"></div>
+        <div class="summary-row summary-total">
+          <span>Загальна сума:</span>
+          <span id="totalPrice">0 грн</span>
+        </div>
+        <button class="checkout-btn" onclick="checkout()">
+          Оформити замовлення
+        </button>
+        <button class="clear-cart-btn" onclick="clearCart()">
+          Очистити кошик
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-container">
+    <div>
+        <h3>Shop AI</h3>
+        <p>Сучасний онлайн-магазин з найкращими товарами.</p>
+    </div>
+
+    <div>
+        <h3>Контакти</h3>
+        <p>Email: shopai@gmail.com</p>
+        <p>Телефон: +380 00 000 00 00</p>
+    </div>
+
+    <div>
+        <h3>Навігація</h3>
+        <a href="index.html#tech">Техніка</a>
+        <a href="index.html#clothes">Одяг</a>
+        <a href="index.html#toys">Іграшки</a>
+        <a href="index.html#books">Книги</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+      © 2026 Shop AI. Всі права захищені.
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
